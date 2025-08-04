@@ -65,6 +65,12 @@ markdown_extensions:
   - pymdownx.snippets
   - tables
   - footnotes
+  - toc:
+      permalink: true
+      permalink_title: false
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
 plugins:
   - search
   - i18n:
