@@ -1,0 +1,139 @@
+site_name: The Twelve-Factor Manifesto
+site_url: https://andygol.co.ua/12f-app/
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>
+
+repo_url: https://github.com/Andygol/12f-app
+repo_name: Andygol/12f-app
+
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: uk
+  favicon: images/favicon.ico
+  logo: images/symbol.png
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/theme-light-dark
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: grey
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: black
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
+
+  features:
+    - navigation.indexes
+    - navigation.tracking
+    # - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+  font:
+    text: Noto Serif
+
+nav:
+  - index.md
+  - 12 factors:
+    - codebase.md
+    - dependencies.md
+    - config.md
+    - backing-services.md
+    - build-release-run.md
+    - processes.md
+    - port-binding.md
+    - concurrency.md
+    - disposability.md
+    - dev-prod-parity.md
+    - logs.md
+    - admin-processes.md
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets
+  - tables
+  - footnotes
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: cs
+          name: Česky
+          site_name: Manifest dvanácti faktorů
+        - locale: de
+          name: Deutsch
+          site_name: Das Zwölf-Faktoren-Manifest
+        - locale: el
+          name: Ελληνικά
+          site_name: Το Μανιφέστο των Δώδεκα Παραγόντων
+        - locale: en
+          name: English
+          # default: true
+          site_name: The Twelve-Factor Manifesto
+          copyright: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+        - locale: es
+          name: Español
+          site_name: El Manifiesto de los Doce Factores
+        - locale: fa
+          name: فارسی
+          site_name: مانیفست دوازده عاملی
+          theme:
+            direction: ltr
+          nav_translations:
+            12 factors: دوازده-سازه
+        - locale: fr
+          name:  Français
+          site_name: Le manifeste des douze facteurs
+        - locale: it
+          name: Italiano
+          site_name: Il Manifesto dei Dodici Fattori
+        - locale: ja
+          name: 日本語
+          site_name: 12要素宣言
+        - locale: ko
+          name: 한국어
+          site_name: 12가지 요소 선언문
+        - locale: pl
+          name: Polski
+          site_name: Manifest dwunastu czynników
+        - locale: pt-BR
+          name: Português do Brasil
+          site_name: O Manifesto dos Doze Fatores
+        - locale: ru
+          name: Русский
+          site_name: Манифест двенадцати факторов
+        - locale: sk
+          name: Slovensky
+          site_name: Manifest dvanajstih faktorjev
+        - locale: th
+          name: ภาษาไทย
+          site_name: แถลงการณ์สิบสองปัจจัย
+        - locale: tr
+          name:  Türkçe
+          site_name: On İki Faktör Manifestosu
+        - locale: uk
+          name: Українська
+          default: true
+          site_name: Маніфест дванадцяти факторів
+          copyright: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.uk" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a><br />Матеріали цього сайту ліцензуються на умовах Ліцензії — <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.uk" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+          nav_translations:
+            12 factors: Дванадцять факторів
+        - locale: vi
+          name:  Tiếng Việt
+          site_name: Tuyên ngôn Mười hai yếu tố
+        - locale: zh
+          name: 简体中文
+          site_name: 十二因素宣言
